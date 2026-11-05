@@ -5,3 +5,6 @@
 !/global.R
 !/experiment.R
 !/dashboard.R
+## modules are git submodules (setupProject useGit = "sub")
+!/.gitmodules
+!/modules/
