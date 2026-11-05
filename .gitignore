@@ -8,3 +8,17 @@
 ## modules are git submodules (setupProject useGit = "sub")
 !/.gitmodules
 !/modules/
+.Rprofile
+cache
+inputs
+outputs/ZONE/clearcut_R100
+scratch/raster
+scratch/terra
+scratch
+.Rproj.user
+.Rhistory
+.Rdata
+.RData
+.secret
+.secrets
+.Restart*

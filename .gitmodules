@@ -1,0 +1,33 @@
+[submodule "modules/Biomass_speciesData"]
+	path = modules/Biomass_speciesData
+	url = https://github.com/PredictiveEcology/Biomass_speciesData
+[submodule "modules/localEcozones"]
+	path = modules/localEcozones
+	url = https://github.com/PredictiveEcology/localEcozones
+[submodule "modules/Biomass_borealDataPrep"]
+	path = modules/Biomass_borealDataPrep
+	url = https://github.com/PredictiveEcology/Biomass_borealDataPrep
+[submodule "modules/Biomass_speciesFactorial"]
+	path = modules/Biomass_speciesFactorial
+	url = https://github.com/PredictiveEcology/Biomass_speciesFactorial
+[submodule "modules/Biomass_speciesParameters"]
+	path = modules/Biomass_speciesParameters
+	url = https://github.com/PredictiveEcology/Biomass_speciesParameters
+[submodule "modules/Biomass_yieldTables"]
+	path = modules/Biomass_yieldTables
+	url = https://github.com/PredictiveEcology/Biomass_yieldTables
+[submodule "modules/thlbBC"]
+	path = modules/thlbBC
+	url = https://github.com/PredictiveEcology/thlbBC
+[submodule "modules/harvestConstraintsBC"]
+	path = modules/harvestConstraintsBC
+	url = https://github.com/PredictiveEcology/harvestConstraintsBC
+[submodule "modules/Biomass_core"]
+	path = modules/Biomass_core
+	url = https://github.com/PredictiveEcology/Biomass_core
+[submodule "modules/simpleHarvestPlanning"]
+	path = modules/simpleHarvestPlanning
+	url = https://github.com/PredictiveEcology/simpleHarvestPlanning
+[submodule "modules/LandRCBM_partialDisturbance"]
+	path = modules/LandRCBM_partialDisturbance
+	url = https://github.com/camillegiuliano/LandRCBM_partialDisturbance
