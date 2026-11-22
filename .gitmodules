@@ -27,7 +27,7 @@
 	url = https://github.com/PredictiveEcology/Biomass_core
 [submodule "modules/simpleHarvestPlanning"]
 	path = modules/simpleHarvestPlanning
-	url = https://github.com/PredictiveEcology/simpleHarvestPlanning
+	url = https://github.com/AllenLarocque/simpleHarvestPlanning
 [submodule "modules/LandRCBM_partialDisturbance"]
 	path = modules/LandRCBM_partialDisturbance
 	url = https://github.com/camillegiuliano/LandRCBM_partialDisturbance

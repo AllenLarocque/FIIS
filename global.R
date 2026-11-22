@@ -41,7 +41,7 @@ out <- SpaDES.project::setupProject(
               , "PredictiveEcology/thlbBC@development"                   # where logging is allowed (THLB)
               , "PredictiveEcology/harvestConstraintsBC@development"     # parks, habitat, scenic areas, watersheds
               , "PredictiveEcology/Biomass_core@development"             # growth
-              , "PredictiveEcology/simpleHarvestPlanning@development"    # Hanzlik cut
+              , "AllenLarocque/simpleHarvestPlanning@development"        # Hanzlik cut
               , "camillegiuliano/LandRCBM_partialDisturbance@main"),     # removal and replanting; no development branch
   times = list(start = 2025, end = .endYear),
   ## the project's own library; module reqdPkgs are added by setupProject
