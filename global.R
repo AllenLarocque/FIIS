@@ -10,6 +10,10 @@ if (!exists("doRun")) doRun <- TRUE
 out <- SpaDES.project::setupProject(
   name = "FIIS",
   useGit = "sub",  # modules become git submodules of this repo, so they can be branched and committed in
+  ## Don't add Posit's .../latest repo: the repos below (a p3m snapshot) already serve Linux binaries,
+  ## and resolving against latest got stringfish 0.19.2's RcppParallel (>= 6.1.1) requirement,
+  ## so Require upgraded RcppParallel and broke the snapshot's stringfish and qs2 (2026-11-21).
+  setLinuxBinaryRepo = FALSE,
   .unit = .unit,
   .harvestType = .harvestType,
   .rotationAge = .rotationAge,
