@@ -33,7 +33,7 @@ out <- SpaDES.project::setupProject(
                                       if (isTRUE(.balanceGrowth)) "" else "noBalanceGrowth"),
                scratchPath = file.path("scratch", .unit)),
   modules = c("PredictiveEcology/Biomass_speciesData@development"
-              , "PredictiveEcology/localEcozones@development"            # ecoregions: BEC zones in BC
+              , "AllenLarocque/localEcozones@fix/gadm-prepInputs"         # ecoregions: BEC zones in BC. PE PR pending (GADM via prepInputs); back to PredictiveEcology@development once merged
               , "PredictiveEcology/Biomass_borealDataPrep@development"
               , "PredictiveEcology/Biomass_speciesFactorial@development" # the factorial table speciesParameters fits to
               , "PredictiveEcology/Biomass_speciesParameters@development" # fits growth curves to permanent sample plots
