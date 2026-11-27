@@ -9,6 +9,7 @@ if (!exists("doRun")) doRun <- TRUE
 
 out <- SpaDES.project::setupProject(
   name = "FIIS",
+  useGit = "sub",  # modules become git submodules of this repo, so they can be branched and committed in
   .unit = .unit,
   .harvestType = .harvestType,
   .rotationAge = .rotationAge,
@@ -40,16 +41,19 @@ out <- SpaDES.project::setupProject(
               , "PredictiveEcology/thlbBC@development"                   # where logging is allowed (THLB)
               , "PredictiveEcology/harvestConstraintsBC@development"     # parks, habitat, scenic areas, watersheds
               , "PredictiveEcology/Biomass_core@development"             # growth
-              , "PredictiveEcology/simpleHarvestPlanning@development"    # Hanzlik cut
+              , "AllenLarocque/simpleHarvestPlanning@development"        # Hanzlik cut
               , "camillegiuliano/LandRCBM_partialDisturbance@main"),     # removal and replanting; no development branch
   times = list(start = 2025, end = .endYear),
   ## the project's own library; module reqdPkgs are added by setupProject
   packages = c("PredictiveEcology/SpaDES.core@development (>= 3.2.1.9053)" # `events` barrier for stage 1; reruns overwrite yearly tifs (#510)
                , "PredictiveEcology/timberSupply@development (>= 0.0.0.9004)" # bcManagementUnit(), for the study area; "TSA2" works
                , "PredictiveEcology/LandR@development (>= 1.2.0.9064)" # the SCANFI grid below; species list fix (#287)
+               , "PredictiveEcology/reproducible@development (>= 3.2.1.9085)" # Drive login from $GOOGLEDRIVE_AUTH (service-account key), else anonymous
+               , "googledrive"
                , "terra", "sf"),
   options = list(
-    "~/googledriveAuthentication.R"
+    ## PE r-universe first, so development PE packages come from there (set before packages install)
+    repos = c(PE = "https://predictiveecology.r-universe.dev", getOption("repos"))
     , reproducible.shapefileRead = "terra::vect"
   ),
   params = list(
