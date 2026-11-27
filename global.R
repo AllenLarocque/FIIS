@@ -51,7 +51,6 @@ out <- SpaDES.project::setupProject(
   options = list(
     "~/googledriveAuthentication.R"
     , reproducible.shapefileRead = "terra::vect"
-    , reproducible.destinationPathShared = "data" # downloads shared between projects (may be a link)
   ),
   params = list(
     .globals = list(.studyAreaName = if (nzchar(.unit)) .unit else "SouthernInteriorBC", .plots = NA,
